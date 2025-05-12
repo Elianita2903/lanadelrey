@@ -7,6 +7,12 @@ body {
     background-color: #ffe4e1; /* Fondo rosa pastel */
     margin: 0;
     padding: 0;
+
+    /* Agregado: Fondo de lazos tipo coquette */
+    background-image: url('images/lazo-coquette.png'); /* Ruta de la imagen */
+    background-repeat: repeat; /* Repetir el fondo */
+    background-size: contain; /* Ajustar tamaño para que se vean los lazos */
+    background-position: center; /* Centrar el fondo */
 }
 
 /* Títulos principales */
