@@ -81,8 +81,8 @@ a:hover {
 
 /* Imágenes */
 img {
-    width: 200px; /* Ancho fijo para todas las imágenes */
-    height: 200px; /* Alto fijo para todas las imágenes */
+    width: 600px; /* Ancho fijo para todas las imágenes */
+    height: 600px; /* Alto fijo para todas las imágenes */
     object-fit: cover; /* Mantiene proporciones agradables */
     display: block;
     margin: 20px auto;
