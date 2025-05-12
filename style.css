@@ -12,7 +12,7 @@ li {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #f4f4f4, #d9d9d9);
     color: #333;
     line-height: 1.6;
 }
@@ -26,16 +26,13 @@ body {
 /* Navigation */
 nav {
     background-color: #333;
-    /* Dark background for contrast */
     padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    /* Use Flexbox for horizontal menu */
     justify-content: center;
-    /* Center the menu items */
 }
 
 nav ul li {
@@ -58,24 +55,17 @@ nav ul li a:hover {
 header {
     text-align: center;
     padding: 2rem 0;
-    /* Increased padding for prominence */
     background: linear-gradient(to bottom, #f8f8f8, #eee);
-    /* Soft gradient */
     border-bottom: 1px solid #ccc;
-    /* Subtle border */
 }
 
 header h1 {
-    font-size: 2.5rem;
-    /* Larger font size */
-    margin-bottom: 1rem;
-    color: #555;
-    /* Slightly darker text */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    /* Text shadow for depth */
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #444;
 }
 
-/* Intro Section (index.html) */
+/* Intro Section */
 .intro {
     background-color: white;
     padding: 1rem;
@@ -89,7 +79,7 @@ header h1 {
     color: #666;
 }
 
-/* PDF Download Button (index.html) */
+/* PDF Download Button */
 .pdf-download {
     text-align: center;
     margin-top: 2rem;
@@ -99,7 +89,6 @@ header h1 {
     display: inline-block;
     padding: 10px 20px;
     background-color: #4CAF50;
-    /* Green button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -108,135 +97,33 @@ header h1 {
 
 .pdf-download a:hover {
     background-color: #45a049;
-    /* Darker green on hover */
 }
 
-/* Biography Section (section1.html) */
-.biography {
-    background-color: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.biography h2 {
-    color: #777;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.5rem;
-}
-
-.biography p {
-    color: #555;
-}
-
-/* Image Gallery (section1.html) */
-.gallery {
+/* Gallery Section */
+.grid-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Responsive grid */
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
-.gallery img {
+.grid-gallery img {
     width: 100%;
-    /* Make images fill their container */
     height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Sabias Que Section (section1.html) */
-.sabias-que {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-left: 4px solid #555;
-    /* Highlight the section */
-    margin-bottom: 1rem;
-}
-
-.sabias-que h3 {
-    color: #555;
-    margin-bottom: 0.5rem;
-}
-
-.sabias-que p {
-    color: #555;
-    font-style: italic;
-}
-
-/* Discos Section (section2.html) */
-.discos {
-    background-color: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.discos h2 {
-    color: #777;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.5rem;
-}
-
+/* Albums Section */
 .album-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /* Adjust minmax as needed */
     gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.album {
-    text-align: center;
 }
 
 .album img {
     width: 100%;
-    height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.album p {
-    margin-top: 0.5rem;
-    color: #555;
-}
-
-/* More Sections (section3.html) - Basic Styling */
-.melancolia,
-.premios,
-.femmeFatale,
-.vidaAmorosa,
-.estilo {
-    background-color: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.melancolia h2,
-.premios h2,
-.femmeFatale h2,
-.vidaAmorosa h2,
-.estilo h2 {
-    color: #777;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.5rem;
-}
-
-.melancolia p,
-.premios p,
-.femmeFatale p,
-.vidaAmorosa p,
-.estilo p {
-    color: #555;
 }
 
 /* Footer */
