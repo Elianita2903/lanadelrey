@@ -1,6 +1,6 @@
 /* General Typography */
 body {
-    font-family: 'Georgia', serif; /* Elegante y clásico */
+    font-family: 'Italiana', serif; /* Elegante y refinada */
     font-size: 16px;
     line-height: 1.8;
     color: #4a3f35; /* Marrón oscuro */
@@ -9,7 +9,7 @@ body {
     padding: 0;
 
     /* Fondo de textura de papel */
-    background-image: url('C:\Users\Usuario\Downloads\moños.png'); /* Ruta de la imagen de fondo */
+    background-image: url('C:\\Users\\Usuario\\Downloads\\moños.png'); /* Ruta de la imagen de fondo */
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +17,7 @@ body {
 
 /* Títulos principales */
 h1, h2 {
-    font-family: 'Playfair Display', serif; /* Elegante para títulos */
+    font-family: 'Great Vibes', 'Italiana', serif; /* Fuentes personalizadas */
     color: #3b2716; /* Marrón oscuro profundo */
     margin-bottom: 20px;
     text-align: center;
@@ -37,7 +37,7 @@ h2 {
 
 /* Textos */
 p {
-    font-family: 'Georgia', serif;
+    font-family: 'Italiana', serif; /* Fuente para el texto */
     font-size: 1.1rem;
     color: #5a4b3c; /* Marrón más suave */
     margin-bottom: 20px;
