@@ -34,7 +34,7 @@ body {
     font-style: normal;
     color: #5a4b3c; /* Marrón más suave */
     text-align: justify;
-    text-indent: 2em; /* Sangría al inicio del párrafo */
+    text-indent: 1em; /* Sangría al inicio del párrafo */
 }
 
 /* Títulos principales */
@@ -63,7 +63,7 @@ p {
     color: #5a4b3c; /* Marrón más suave */
     margin-bottom: 20px;
     text-align: justify;
-    text-indent: 2em; /* Sangría al inicio del párrafo */
+    text-indent: 1em; /* Sangría al inicio del párrafo */
 }
 
 /* Enlaces */
