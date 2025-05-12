@@ -1,44 +1,49 @@
+/* Importar fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&display=swap');
+
 /* General Typography */
 body {
-    font-family: 'Italiana', serif;
+    font-family: 'Italiana', serif; /* Elegante y refinada */
     font-size: 16px;
     line-height: 1.8;
-    color: #4a3f35;
-    background-color: #fdf6e3;
+    color: #4a3f35; /* Marrón oscuro */
+    background-color: #fdf6e3; /* Fondo beige claro */
     margin: 0;
     padding: 0;
 
-    /* Fondo con una imagen */
-    background-image: url('https://raw.githubusercontent.com/Elianita2903/lanadelrey/main/mo%C3%B1os.png');
+    /* Fondo de textura de papel */
+    background-image: url('https://raw.githubusercontent.com/Elianita2903/lanadelrey/main/mo%C3%B1os.png'); /* Ruta de la imagen de fondo */
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
 }
 
-/* Fuentes personalizadas */
+/* Clases para fuentes personalizadas */
 .great-vibes-regular {
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
 }
 
 .italiana-regular {
-    font-family: 'Italiana', serif;
+    font-family: "Italiana", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-/* Títulos */
+/* Títulos principales */
 h1, h2 {
-    font-family: 'Great Vibes', cursive; /* Fuente personalizada para títulos */
-    color: #3b2716;
+    font-family: "Great Vibes", cursive; /* Usando la fuente Great Vibes */
+    font-weight: 400;
+    font-style: normal;
+    color: #3b2716; /* Marrón oscuro profundo */
     text-align: center;
     margin-bottom: 20px;
 }
 
 h1 {
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efecto de sombra suave */
 }
 
 h2 {
@@ -47,12 +52,12 @@ h2 {
 
 /* Textos */
 p {
-    font-family: 'Italiana', serif;
+    font-family: "Italiana", serif; /* Fuente para el texto */
     font-size: 1.1rem;
-    color: #5a4b3c;
+    color: #5a4b3c; /* Marrón más suave */
     margin-bottom: 20px;
     text-align: justify;
-    text-indent: 2em;
+    text-indent: 2em; /* Sangría al inicio del párrafo */
 }
 /* Enlaces */
 a {
