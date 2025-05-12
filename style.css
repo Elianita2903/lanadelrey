@@ -1,9 +1,6 @@
-/* Importar fuentes desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&display=swap');
-
 /* General Typography */
 body {
-    font-family: 'Italiana', serif; /* Elegante y refinada */
+    font-family: 'Arial', sans-serif; /* Fuente base genérica */
     font-size: 16px;
     line-height: 1.8;
     color: #4a3f35; /* Marrón oscuro */
@@ -18,24 +15,10 @@ body {
     background-position: center;
 }
 
-/* Clases para fuentes personalizadas */
-.great-vibes-regular {
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.italiana-regular {
-    font-family: "Italiana", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* Títulos principales */
+/* Títulos principales con fuente cursiva */
 h1, h2 {
-    font-family: "Great Vibes", cursive; /* Usando la fuente Great Vibes */
-    font-weight: 400;
-    font-style: normal;
+    font-family: cursive; /* Fuente cursiva genérica */
+    font-style: italic;
     color: #3b2716; /* Marrón oscuro profundo */
     text-align: center;
     margin-bottom: 20px;
@@ -52,7 +35,7 @@ h2 {
 
 /* Textos */
 p {
-    font-family: "Italiana", serif; /* Fuente para el texto */
+    font-family: 'Arial', sans-serif; /* Fuente para el texto */
     font-size: 1.1rem;
     color: #5a4b3c; /* Marrón más suave */
     margin-bottom: 20px;
