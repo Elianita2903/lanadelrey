@@ -81,8 +81,9 @@ a:hover {
 
 /* Imágenes */
 img {
-    max-width: 100%;
-    height: auto;
+    width: 200px; /* Ancho fijo para todas las imágenes */
+    height: 200px; /* Alto fijo para todas las imágenes */
+    object-fit: cover; /* Mantiene proporciones agradables */
     display: block;
     margin: 20px auto;
     border: 8px solid #ff69b4; /* Borde rosado */
