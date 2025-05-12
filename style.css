@@ -65,6 +65,7 @@ p {
     text-align: justify;
     text-indent: 2em; /* Sangría al inicio del párrafo */
 }
+
 /* Enlaces */
 a {
     color: #8b4513; /* Marrón rojizo */
@@ -84,7 +85,7 @@ img {
     height: auto;
     display: block;
     margin: 20px auto;
-    border: 2px solid #d4b483; /* Borde dorado suave */
+    border: 2px solid #ff69b4; /* Borde rosado */
     border-radius: 5px;
 }
 
@@ -94,7 +95,7 @@ section {
     padding: 30px;
     max-width: 800px;
     background: #fffdfa; /* Fondo blanco crema */
-    border: 1px solid #d4b483; /* Borde dorado suave */
+    border: 1px solid #ff69b4; /* Borde rosado */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
     border-radius: 12px;
 }
@@ -106,7 +107,7 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #f0e6d6; /* Fondo beige intermedio */
-    border-bottom: 2px solid #d4b483; /* Borde dorado */
+    border-bottom: 2px solid #ff69b4; /* Borde rosado */
 }
 
 nav ul li {
@@ -152,12 +153,12 @@ footer {
     color: #4a3f35;
     padding: 20px 0;
     background-color: #f0e6d6;
-    border-top: 2px solid #d4b483;
+    border-top: 2px solid #ff69b4; /* Borde rosado */
 }
 
 /* Bordes decorativos para mejorar la estética */
 .border-decorative {
-    border: 2px solid #d4b483;
+    border: 2px solid #ff69b4; /* Borde rosado */
     padding: 10px;
     margin: 20px 0;
     border-radius: 8px;
