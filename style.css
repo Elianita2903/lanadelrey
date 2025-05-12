@@ -15,9 +15,22 @@ body {
     background-position: center;
 }
 
+/* Clases para fuentes personalizadas */
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Títulos principales */
 h1, h2 {
-    font-family: 'Great Vibes', 'Italiana', serif; /* Fuentes personalizadas */
+    font-family: 'Great Vibes', cursive; /* Usando la clase para títulos */
     color: #3b2716; /* Marrón oscuro profundo */
     margin-bottom: 20px;
     text-align: center;
@@ -37,14 +50,13 @@ h2 {
 
 /* Textos */
 p {
-    font-family: 'Italiana', serif; /* Fuente para el texto */
+    font-family: 'Italiana', sans-serif; /* Usando la clase para textos */
     font-size: 1.1rem;
     color: #5a4b3c; /* Marrón más suave */
     margin-bottom: 20px;
     text-align: justify;
     text-indent: 2em; /* Sangría al inicio del párrafo */
 }
-
 /* Enlaces */
 a {
     color: #8b4513; /* Marrón rojizo */
