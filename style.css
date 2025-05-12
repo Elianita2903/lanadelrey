@@ -153,12 +153,12 @@ footer {
     color: #4a3f35;
     padding: 20px 0;
     background-color: #f0e6d6;
-    border-top: 4px solid #ff69b4; /* Borde rosado */
+    border-top: 8px solid #ff69b4; /* Borde rosado */
 }
 
 /* Bordes decorativos para mejorar la estética */
 .border-decorative {
-    border: 4px solid #ff69b4; /* Borde rosado */
+    border: 8px solid #ff69b4; /* Borde rosado */
     padding: 10px;
     margin: 20px 0;
     border-radius: 8px;
