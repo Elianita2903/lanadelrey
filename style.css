@@ -9,7 +9,7 @@ body {
     padding: 0;
 
     /* Fondo de textura de papel */
-    background-image: url('https://github.com/Elianita2903/lanadelrey/blob/2e87fcce5ef940a7ebd990d6e2c72aea13a7d732/mo%C3%B1os.png'); /* Ruta de la imagen de fondo */
+    background-image: url('https://raw.githubusercontent.com/Elianita2903/lanadelrey/main/mo%C3%B1os.png'); /* Ruta de la imagen de fondo */
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
@@ -23,34 +23,34 @@ body {
 }
 
 .italiana-regular {
-    font-family: "Italiana", sans-serif;
+    font-family: "Italiana", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 /* Títulos principales */
 h1, h2 {
-    font-family: 'Great Vibes', cursive; /* Usando la clase para títulos */
+    font-family: "Great Vibes", cursive; /* Usando la fuente Great Vibes */
+    font-weight: 400;
+    font-style: normal;
     color: #3b2716; /* Marrón oscuro profundo */
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
     font-size: 3rem;
-    font-weight: 700;
     text-transform: capitalize;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efecto de sombra suave */
 }
 
 h2 {
     font-size: 2.5rem;
-    font-weight: 600;
 }
 
 /* Textos */
 p {
-    font-family: 'Italiana', sans-serif; /* Usando la clase para textos */
+    font-family: "Italiana", serif; /* Fuente para el texto */
     font-size: 1.1rem;
     color: #5a4b3c; /* Marrón más suave */
     margin-bottom: 20px;
