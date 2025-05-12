@@ -1,408 +1,249 @@
-/* Estilos generales */
-* {
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --color-primary: #d4b8c7;
-    --color-secondary: #6d8b74;
-    --color-accent: #a75d67;
-    --color-text: #333;
-    --color-light: #f7f3f5;
-    --color-dark: #2d2d2d;
-    --font-primary: 'Playfair Display', serif;
-    --font-secondary: 'Montserrat', sans-serif;
-    --font-tertiary: 'Cormorant Garamond', serif;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 4rem;
 }
 
 body {
-    font-family: var(--font-secondary);
-    color: var(--color-text);
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
-    background-color: var(--color-light);
 }
 
-/* Fondos específicos para cada página */
-.home-page {
-    background-image: url('https://i.ibb.co/tCgMchS/bg-pattern-1.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-color: rgba(247, 243, 245, 0.9);
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.disco-page {
-    background-image: url('https://i.ibb.co/Lv5B7Lz/bg-pattern-2.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-color: rgba(247, 243, 245, 0.9);
+/* Navigation */
+nav {
+    background-color: #333;
+    /* Dark background for contrast */
+    padding: 10px 0;
 }
 
-.estilo-page {
-    background-image: url('https://i.ibb.co/dcBLrFN/bg-pattern-3.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-color: rgba(247, 243, 245, 0.9);
-}
-
-/* Header y navegación */
-header {
-    background-color: rgba(214, 184, 199, 0.9);
-    padding: var(--spacing-md);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    text-align: center;
-}
-
-.logo h1 {
-    font-family: var(--font-primary);
-    font-size: 2.5rem;
-    color: var(--color-dark);
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-}
-
-.subtitle {
-    font-family: var(--font-tertiary);
-    font-style: italic;
-    color: var(--color-accent);
-    font-size: 1.2rem;
-    margin-top: -5px;
-}
-
-/* Menú de navegación con Flexbox */
-.menu {
-    display: flex;
+nav ul {
     list-style: none;
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.menu a {
-    text-decoration: none;
-    color: var(--color-dark);
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.menu a:hover, .menu a.active {
-    background-color: var(--color-accent);
-    color: var(--color-light);
-}
-
-.download-btn {
-    background-color: var(--color-secondary);
-    color: white !important;
-}
-
-.download-btn:hover {
-    background-color: #5a745f !important;
-}
-
-/* Grid container principal */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-xl);
-    padding: var(--spacing-xl);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Secciones generales */
-.section {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: var(--spacing-lg);
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-family: var(--font-primary);
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-lg);
-    font-size: 2rem;
-    text-align: center;
-    position: relative;
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: var(--color-accent);
-}
-
-.content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-    align-items: center;
-}
-
-.content-wrapper.reverse {
-    grid-template-columns: 1fr 1fr;
-    direction: rtl;
-}
-
-.content-wrapper.reverse > div {
-    direction: ltr;
-}
-
-.content-wrapper p {
-    margin-bottom: var(--spacing-md);
-    font-size: 1.05rem;
-}
-
-/* Imágenes */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.02);
-}
-
-/* Estilo específico para la página de inicio */
-.bio-image, .mel-image, .premios-image, .amor-image {
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.bio-text, .mel-text, .premios-text, .amor-text {
     display: flex;
-    flex-direction: column;
+    /* Use Flexbox for horizontal menu */
     justify-content: center;
+    /* Center the menu items */
 }
 
-/* Estilos para la página de Discografía */
-.intro-section {
-    grid-column: 1 / -1;
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Header */
+header {
     text-align: center;
-    padding: var(--spacing-lg);
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    /* Increased padding for prominence */
+    background: linear-gradient(to bottom, #f8f8f8, #eee);
+    /* Soft gradient */
+    border-bottom: 1px solid #ccc;
+    /* Subtle border */
 }
 
-.intro-text {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.7;
+header h1 {
+    font-size: 2.5rem;
+    /* Larger font size */
+    margin-bottom: 1rem;
+    color: #555;
+    /* Slightly darker text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Text shadow for depth */
 }
 
-.albums-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-    grid-column: 1 / -1;
-}
-
-.album-card {
+/* Intro Section (index.html) */
+.intro {
     background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.album-card:hover {
-    transform: translateY(-5px);
+.intro p {
+    font-size: 1.1rem;
+    color: #666;
 }
 
-.album-image {
-    height: 250px;
-    overflow: hidden;
-}
-
-.album-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.album-info {
-    padding: var(--spacing-md);
-}
-
-.album-info h3 {
-    font-family: var(--font-primary);
-    color: var(--color-accent);
-    margin-bottom: var(--spacing-sm);
-}
-
-.album-year {
-    font-weight: bold;
-    color: var(--color-secondary);
-    margin-bottom: var(--spacing-sm);
-}
-
-.album-desc {
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.sabias-que {
-    grid-column: 1 / -1;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: var(--spacing-lg);
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.sabias-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--spacing-lg);
-    align-items: center;
-}
-
-.sabias-text p {
-    margin-bottom: var(--spacing-md);
-}
-
-/* Estilos para la página de Estilo */
-.estilo-section, .maquillaje-section, .femme-fatale, .iconografia {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: var(--spacing-lg);
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.estilo-content, .maquillaje-content, .iconografia-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-    align-items: center;
-}
-
-.maquillaje-content.reverse {
-    grid-template-columns: 1fr 1fr;
-    direction: rtl;
-}
-
-.maquillaje-content.reverse > div {
-    direction: ltr;
-}
-
-.femme-intro {
+/* PDF Download Button (index.html) */
+.pdf-download {
     text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: var(--spacing-lg);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: italic;
-    color: var(--color-accent);
+    margin-top: 2rem;
 }
 
-.femme-grid {
+.pdf-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    /* Green button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-download a:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+/* Biography Section (section1.html) */
+.biography {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.biography h2 {
+    color: #777;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.biography p {
+    color: #555;
+}
+
+/* Image Gallery (section1.html) */
+.gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    /* Make images fill their container */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sabias Que Section (section1.html) */
+.sabias-que {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 4px solid #555;
+    /* Highlight the section */
+    margin-bottom: 1rem;
+}
+
+.sabias-que h3 {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.sabias-que p {
+    color: #555;
+    font-style: italic;
+}
+
+/* Discos Section (section2.html) */
+.discos {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discos h2 {
+    color: #777;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Adjust minmax as needed */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.album {
+    text-align: center;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.album p {
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+/* More Sections (section3.html) - Basic Styling */
+.melancolia,
+.premios,
+.femmeFatale,
+.vidaAmorosa,
+.estilo {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.melancolia h2,
+.premios h2,
+.femmeFatale h2,
+.vidaAmorosa h2,
+.estilo h2 {
+    color: #777;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.melancolia p,
+.premios p,
+.femmeFatale p,
+.vidaAmorosa p,
+.estilo p {
+    color: #555;
 }
 
 /* Footer */
 footer {
-    background-color: var(--color-dark);
-    color: var(--color-light);
     text-align: center;
-    padding: var(--spacing-lg);
-    margin-top: var(--spacing-xl);
-}
-
-footer p {
-    margin-bottom: var(--spacing-sm);
-}
-
-.credits {
-    font-size: 0.9rem;
-    color: var(--color-primary);
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: var(--spacing-md);
-    }
-    
-    .content-wrapper, .content-wrapper.reverse, .estilo-content, 
-    .maquillaje-content, .femme-grid, .sabias-content, .iconografia-content {
-        grid-template-columns: 1fr;
-        direction: ltr;
-    }
-    
-    .content-wrapper.reverse > div {
-        direction: ltr;
-    }
-    
-    .grid-container {
-        padding: var(--spacing-md);
-    }
-    
-    .albums-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .menu {
-        gap: 1rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo h1 {
-        font-size: 2rem;
-    }
-    
-    .subtitle {
-        font-size: 1rem;
-    }
-    
-    .menu a {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.9rem;
-    }
-    
-    .section, .intro-section, .sabias-que, .estilo-section, 
-    .maquillaje-section, .femme-fatale, .iconografia {
-        padding: var(--spacing-md);
-    }
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    border-top: 1px solid #555;
 }
