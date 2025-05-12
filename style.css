@@ -71,7 +71,7 @@ a {
     color: #8b4513; /* Marrón rojizo */
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 1px dashed #8b4513; /* Línea decorativa */
+    border-bottom: 4px dashed #8b4513; /* Línea decorativa */
 }
 
 a:hover {
@@ -85,7 +85,7 @@ img {
     height: auto;
     display: block;
     margin: 20px auto;
-    border: 2px solid #ff69b4; /* Borde rosado */
+    border: 8px solid #ff69b4; /* Borde rosado */
     border-radius: 5px;
 }
 
@@ -95,7 +95,7 @@ section {
     padding: 30px;
     max-width: 800px;
     background: #fffdfa; /* Fondo blanco crema */
-    border: 1px solid #ff69b4; /* Borde rosado */
+    border: 5px solid #ff69b4; /* Borde rosado */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
     border-radius: 12px;
 }
@@ -107,7 +107,7 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #f0e6d6; /* Fondo beige intermedio */
-    border-bottom: 2px solid #ff69b4; /* Borde rosado */
+    border-bottom: 8px solid #ff69b4; /* Borde rosado */
 }
 
 nav ul li {
